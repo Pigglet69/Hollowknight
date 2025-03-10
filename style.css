@@ -78,7 +78,7 @@ img {
 .final-text {
     font-size: 1.5rem; 
     font-style: italic;
-    text-align: justify;
+    text-align: left;
     color: #d1d1ff; 
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3); 
     margin-top: 40px;
