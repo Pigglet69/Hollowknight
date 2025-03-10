@@ -1,32 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
 body {
-     background-image:url("img/Menu_Theme_Classic_Current.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 100%;
-     height: 100%;
-     align-items: center;
-}
-h1 {
-color: #3d4de5;
-text-align: center;
-font-family: cursive;
-}
-h2 {
-    color: #3d4de5;
+    background-image: url("img/Menu_Theme_Classic_Current.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    display: flex;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Cinzel Decorative', serif; 
     text-align: center;
-    font-family: cursive;
+    color: #e0e0e0; 
 }
 
-p{
-    color:#6270ef;
-    text-align: center;
-    font-family:cursive;
+.container {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #f8f8ff; 
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3); 
+}
+
+p {
+    color: #d1d1ff;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+}
+
+button {
+    background-color: #3d4de5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    font-family: 'Cinzel Decorative', serif; 
+}
+
+button:hover {
+    background-color: #080a20;
+    transform: scale(1.05);
 }
 
 img {
-    align-items: center;
-    image-rendering: auto;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 12px;
 }
-.style {
-    align-items: center;
+
+.title-img {
+    width: 100%;
+}
+
+.content-img {
+    width: 0%;
+    max-width: 500px;
+}
+
+.final-text {
+    font-size: 1.5rem; 
+    font-style: italic;
+    text-align: justify;
+    color: #d1d1ff; 
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.3); 
+    margin-top: 40px;
+    line-height: 2; 
+}
+
+.final-section {
+    padding: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.2); 
+    margin-top: 40px;
+}
+
+.real-final{
+    border-top: 2px solid rgba(255, 255, 255, 0.2); 
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+    margin-top: 40px;
+}
+
+
+.mask{
+    width: 30px;
+    height: 40px;
 }

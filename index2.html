@@ -1,27 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hollow Knight</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/icon.png">
 </head>
-
 <body>
-    <audio controls>
-        <source src="mp3/videoplayback.mp3" type="audio/x-mp3">
-    </audio>
-    <h1>Hollow Knight</h1>
-    <h2>Historia do jogo</h2>
-    <p>O jogador controla um cavaleiro silencioso que explora Hallownest, um antigo reino de insetos agora em ruínas.<br> Uma praga misteriosa, conhecida como "A Infecção", corrompeu as criaturas do reino,<br> e o cavaleiro deve descobrir a origem dessa praga e encontrar uma maneira de detê-la.</p>
-    <center><img src="img/gameplay.gif"></center>
-    <h2>Atmosfera</h2>
-    <p>Hollow Knight é conhecido por sua atmosfera sombria e melancólica.<br> O mundo do jogo é cheio de mistérios e segredos, e a trilha sonora atmosférica contribui para a imersão.</p>
-    <center><img src="img/atmosfera.gif"></center>
-    <h2>Qual é a mensagem do jogo?</h2>
-    <p>O texto de Beaumont chega a consideração que Hollow Knight é “um jogo sobre o direito do indivíduo de existir diante das autoridades que buscam apagá-lo”.</p>
-    <center><img src="img/radiancia.gif"></center>
-    </body>
-   
+
+    <div class="container">
+        <img src="img/vheart_title_brazilian_portuguese.png" class="title-img">
+
+        <button onclick="toggleMusic()">Música Ambiente</button>
+        <audio id="musica" src="mp3/videoplayback.mp3" loop></audio>
+        <section>
+            <br>
+            <h2>História do Jogo</h2>
+            <p>
+                O jogador controla um cavaleiro silencioso que explora Hallownest, um antigo reino de insetos agora em ruínas. <br>
+                Uma praga misteriosa, conhecida como "A Infecção", corrompeu as criaturas do reino, <br>
+                e o cavaleiro deve descobrir a origem dessa praga e encontrar uma maneira de detê-la.
+            </p>
+            <img src="img/gameplay.gif" class="content-img">
+        </section>
+
+        <section>
+            <br>
+            <h2>Atmosfera</h2>
+            <p>
+                Hollow Knight é conhecido por sua atmosfera sombria e melancólica. <br>
+                O mundo do jogo é cheio de mistérios e segredos, e a trilha sonora atmosférica contribui para a imersão.
+            </p>
+            <img src="img/atmosfera.gif" class="content-img">
+        </section>
+
+        <section>
+            <br>
+            <h2>Qual é a mensagem do jogo?</h2>
+            <p>
+                O texto de Beaumont chega à conclusão de que Hollow Knight é “um jogo sobre o direito do indivíduo <br>
+                de existir diante das autoridades que buscam apagá-lo”.
+            </p>
+            <img src="img/radiancia.gif" class="content-img">
+        </section>
+
+        <section class="final-section">
+            <p class="final-text">
+                Sem mente pra pensar;<br>
+                Sem vontade pra quebrar;<br>
+                Sem voz para gritar o sofrimento.<br>
+                <br><br>
+
+                Nascido de Deus e do Vazio;<br>
+                Você irá selar a Luz ofuscante que assola seus sonhos.<br>
+                <br><br>
+
+                Você é o Receptáculo;<br>
+                Você é o Cavaleiro Vazio.<br>
+                <br><br>
+
+                Hollow knight
+            </p>
+            
+        </section>
+        <section class="real-final">
+            <img src="img/Mask-Shard.png" class="mask"> <p>Por Luiz</p>  <img src="img/Mask-Shard.png" class="mask">
+        </section>
+    </div>
+
+    <script>
+        let audio = document.getElementById("musica");
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+            } else {
+                audio.play();
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+    
+</body>
 </html>
